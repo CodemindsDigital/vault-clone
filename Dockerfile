@@ -209,7 +209,7 @@ FROM ubi AS ubi-hsm-fips
 FROM ubuntu:focal AS builder
 
 # Pass in the GO_VERSION as a build-arg
-ARG GO_VERSION
+ARG GO_VERSION=1.26.3
 
 # Set our environment
 ENV PATH="/root/go/bin:/opt/go/bin:/opt/tools/bin:$PATH"
